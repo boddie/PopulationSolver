@@ -18,8 +18,9 @@ if your interested the output of the test is as follows:
 
 The requirements to run this yourself include having CxxTest installed from
 "https://sourceforge.net/projects/cxxtest/?source=navbar". I used version 4.4.
-This does not require the newer C++11 capabilities and sould run on many older
-g++ compilers just fine. 
+This does not require C++ 11 capabilities and sould run on many older
+gcc compilers just fine but it has only been confirmed working on the 4.9.3 
+gcc version.
 
 example building of the tests:
 
