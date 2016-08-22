@@ -24,7 +24,7 @@ public:
       TS_ASSERT_EQUALS(solver.getMaximumYear(), 1900);
     }
 
-    // test with invalid parameters
+    // test with invalid parameters (minimum > maximum)
     {
       try
       {
@@ -36,7 +36,23 @@ public:
       catch (const std::runtime_error& e)
       {
         TS_ASSERT_EQUALS(e.what(), "Minimum year is greater"
-             " than maximum year");
+             " than or equal to maximum year");
+      }
+    }
+    
+    // test with invalid parameters (minimum == maximum)
+    {
+      try
+      {
+        PopulationSolver solver(1900, 1900);
+        // This next line should not be reached so if
+        // it does the test will fail
+        TS_ASSERT(false);
+      }
+      catch (const std::runtime_error& e)
+      {
+        TS_ASSERT_EQUALS(e.what(), "Minimum year is greater"
+             " than or equal to maximum year");
       }
     }
   }

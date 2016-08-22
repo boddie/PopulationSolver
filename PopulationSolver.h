@@ -48,7 +48,7 @@ public:
    * Constructor which sets the initial boundaries for minimum and maximum
    * years to solve for highest population.
    *
-   * Parameter maxYear must be greater than or equal to parameter minYear.
+   * Parameter maxYear must be greater than parameter minYear.
    *
    * @param minYear The lowest year to test in year-to-year population count
    * @param maxYear The highest year to test in year-to-year population count
@@ -120,9 +120,10 @@ private:
 inline PopulationSolver::PopulationSolver(int16_t minYear, int16_t maxYear)
  : mMinYear(minYear), mMaxYear(maxYear)
 {
-  if(mMinYear > mMaxYear)
+  if(mMinYear >= mMaxYear)
   {
-    throw std::runtime_error("Minimum year is greater than maximum year");
+    throw std::runtime_error("Minimum year is greater than or equal"
+         " to maximum year");
   }
 }
 
