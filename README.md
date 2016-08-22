@@ -24,5 +24,5 @@ gcc version.
 
 example building of the tests:
 
-$ python <cxxtestgen_location> --error-printer -o test.cpp PopulationSolverTest.h
-$ g++ -I <cxxtest_dir> -o test test.cpp PopulationSolver.cpp
+$ python <cxxtestgen_location> --error-printer -o test.cpp PopulationSolverTest.h  
+$ g++ -I <cxxtest_dir> -o test test.cpp PopulationSolver.cpp  
