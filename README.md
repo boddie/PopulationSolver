@@ -18,7 +18,7 @@ if your interested the output of the test is as follows:
 
 The requirements to run this yourself include having CxxTest installed from
 "https://sourceforge.net/projects/cxxtest/?source=navbar". I used version 4.4.
-This does not require C++ 11 capabilities and sould run on many older
+This does not require C++ 11 capabilities and should run on many older
 gcc compilers just fine but it has only been confirmed working on the 4.9.3 
 gcc version.
 
