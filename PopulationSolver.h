@@ -6,8 +6,7 @@
 #include <stdint.h>
 
 /**
- * Helper struct which serves as a tuple that represents a
- * person's lifespan
+ * Helper struct which represents a person's lifespan
  */
 struct Lifespan
 {
@@ -36,7 +35,7 @@ struct Lifespan
  *
  * This solution is also capable of solving the problem outside
  * of the years 1900 and 2000 within the limitation of a
- * INT16_t data-type.
+ * int16_t data-type.
  *
  * No methods within this class have been designed to be
  * thread safe.
@@ -49,7 +48,7 @@ public:
    * Constructor which sets the initial boundaries for minimum and maximum
    * years to solve for highest population.
    *
-   * parameter maxYear must be greater than or equal to parameter minYear.
+   * Parameter maxYear must be greater than or equal to parameter minYear.
    *
    * @param minYear The lowest year to test in year-to-year population count
    * @param maxYear The highest year to test in year-to-year population count
@@ -62,7 +61,7 @@ public:
    * within the returned vector.
    *
    * All Lifespan data members must have values within minYear and maxYear given to
-   * this classes constructor.
+   * this class's constructor.
    *
    * n = number of entries within parameter lifespans
    * Time complexity: O(n)
